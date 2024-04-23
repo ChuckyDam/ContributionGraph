@@ -1,0 +1,18 @@
+.BoxCon{
+    background-color: var(--lelvel0);
+    min-width: 10px;
+    height: 10px;
+
+    &.level1{
+        background-color: var(--lelvel1);
+    }
+    &.level2{
+        background-color: var(--lelvel2);
+    }
+    &.level3{
+        background-color: var(--lelvel3);
+    }
+    &.level4{
+        background-color: var(--lelvel4);
+    }
+}
