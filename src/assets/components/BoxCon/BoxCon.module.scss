@@ -1,7 +1,90 @@
+
+@keyframes lookOn {
+    0%{
+        opacity: 0;
+        scale: .8;
+    }
+    60%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes lookOff {
+    0%{
+        opacity: 1;
+        scale: 1;
+    }
+    40%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 0;
+        scale: .8;
+    }
+}
+
 .BoxCon{
+    position: relative;
+
+    &_active{
+        z-index: 10;
+        border: 1px solid var(--colorBlack);
+        scale: 1.1;
+    }
+
+    &__darkSquere{
+        position: absolute;
+        left: 45.5%;
+        bottom: -5px;
+
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+
+        background-color: var(--colorBlack);
+    }
+    &__modal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        text-wrap: nowrap;
+        cursor: default;
+        width: 200px;
+        height: 45px;
+
+        top: -55px;
+        left: -89px;
+        position: absolute;
+        z-index: 10;
+
+        background-color: var(--colorBlack);
+        padding: 5px;
+        border-radius: 10px;
+
+        animation: lookOn .5s;
+
+        &FirstText{
+            color: var(--colorWhite);
+        }
+        &SecondText{
+            color: var(--colorGray);
+            font-size: 12px;
+        }
+
+    }
+
     background-color: var(--lelvel0);
-    min-width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
+
+    cursor: pointer;
 
     &.level1{
         background-color: var(--lelvel1);
@@ -14,5 +97,11 @@
     }
     &.level4{
         background-color: var(--lelvel4);
+    }
+
+    transition: .3s all;
+    &:hover{
+        border: 1px solid var(--colorBlack);
+        scale: 1.1;
     }
 }

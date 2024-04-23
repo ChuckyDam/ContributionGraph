@@ -1,14 +1,7 @@
-.ContributionGraph{
+.Content{
+    padding-top: 100px;
 
-    &__table{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-    &__week{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

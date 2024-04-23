@@ -1,0 +1,45 @@
+.ContributionGraph{
+    position: relative;
+    width: fit-content;
+    color: var(--colorGray);
+
+    &__table{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    &__week{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &Name{
+            padding-right: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            div{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    &__Month{
+        padding-bottom: 5px;
+        margin-left: 25px;
+        width: calc(100% - 100%/50);
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__example{
+        padding-top: 20px;
+        padding-left: 20px;
+        display: flex;
+        p{
+            padding: 0 5px;
+        }
+    }
+}

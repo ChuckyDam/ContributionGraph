@@ -4,10 +4,15 @@
   --lelvel2: rgba(127, 168, 201, 1);
   --lelvel3: rgba(82, 123, 160, 1);
   --lelvel4: rgba(37, 78, 119, 1);
+
+  --colorGray: rgba(124, 124, 124, 1);
+  --colorWhite: rgba(255, 255, 255, 1);
+  --colorBlack: rgba(0, 0, 0, 1);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
