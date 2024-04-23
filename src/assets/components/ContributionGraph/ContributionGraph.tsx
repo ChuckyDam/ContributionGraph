@@ -85,6 +85,7 @@ function ContributionGraph() {
                 })
             }
         </div>
+
         <div className={styles.ContributionGraph__table}>
             <div className={styles.ContributionGraph__weekName}>
                 <div>Пн</div>
@@ -107,7 +108,7 @@ function ContributionGraph() {
                         <BoxCon date={date} daySelect={daySelect} key={date} contributions={contr} onClick={()=>{
                             setDaySelect(date);
                         }} 
-                        textUp={(contr?contr:0) + " contributiones"}
+                        textUp={(contr?contr:"No") + " contributiones"}
                         textDown={`${week[dateParse.getDay()]}, ${fullMonth[dateParse.getMonth()]} ${dateParse.getDate()}, ${dateParse.getFullYear()}`}/>
                         )
                     })
@@ -117,6 +118,7 @@ function ContributionGraph() {
             })
             }
         </div>
+
         <div className={styles.ContributionGraph__example}>
             <p>Меньше... </p>
             <BoxCon date={"0 level"} daySelect={daySelect} contributions={undefined} onClick={()=>{
